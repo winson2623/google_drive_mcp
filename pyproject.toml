@@ -15,6 +15,9 @@ dependencies = [
     "pypdf",
 ]
 
+[project.scripts]
+google-drive-mcp-auth = "google_drive_mcp.auth:main"
+
 [project.optional-dependencies]
 dev = [
     "pytest",
