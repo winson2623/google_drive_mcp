@@ -1,0 +1,5 @@
+{
+  "name": "google-drive-reader",
+  "version": "0.1.0",
+  "description": "Read-only Google Drive listing and file reading for Claude Code via MCP stdio."
+}

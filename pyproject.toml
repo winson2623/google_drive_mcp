@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "google_drive_mcp"
 version = "0.1.0"
 description = "Read-only Google Drive MCP server for Claude Code"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "google-api-python-client",
     "google-auth-httplib2",
@@ -16,7 +16,10 @@ dependencies = [
 ]
 
 [project.scripts]
+google-drive-mcp = "google_drive_mcp.server:main"
 google-drive-mcp-auth = "google_drive_mcp.auth:main"
+google-drive-mcp-list = "google_drive_mcp.drive:main"
+google-drive-mcp-read = "google_drive_mcp.drive:read_main"
 
 [project.optional-dependencies]
 dev = [
@@ -27,3 +30,7 @@ dev = [
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["google_drive_mcp*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "google-drive": {
+      "command": "python",
+      "args": ["-m", "google_drive_mcp.server"],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
