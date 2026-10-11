@@ -140,7 +140,7 @@ def test_permission_error_403() -> None:
     )
     service.files.return_value.list.return_value.execute.side_effect = _http_error(403)
 
-    with pytest.raises(drive.DriveAccessError, match="Cannot access Drive folder"):
+    with pytest.raises(drive.DriveAccessError, match="Cannot access Drive file or folder"):
         drive.list_folder("root", service=service)
 
 
