@@ -2,9 +2,14 @@
   "mcpServers": {
     "google-drive": {
       "command": "python",
-      "args": ["-m", "google_drive_mcp.server"],
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/launch.py"
+      ],
       "env": {
-        "PYTHONUNBUFFERED": "1"
+        "PYTHONUNBUFFERED": "1",
+        "GOOGLE_DRIVE_FOLDER_ID": "1AU6ZW-3NFxme6388YPe98bGWWh9q_E5Y",
+        "GOOGLE_CREDENTIALS_FILE": "${CLAUDE_PLUGIN_ROOT}/credentials.json",
+        "GOOGLE_TOKEN_FILE": "${CLAUDE_PLUGIN_DATA}/token.json"
       }
     }
   }

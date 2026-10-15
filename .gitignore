@@ -1,4 +1,5 @@
 .venv/
+.plugin-data/
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -6,3 +7,6 @@ __pycache__/
 .ruff_cache/
 .env
 token.json
+token.json.tmp
+build/
+dist/

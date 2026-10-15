@@ -1,0 +1,14 @@
+{
+    "name": "google-drive-mcp",
+    "description": "Read-only Google Drive access for Claude Code",
+    "owner": {
+        "name": "Winston Chen"
+    },
+    "plugins": [
+        {
+            "name": "google-drive-reader",
+            "source": "./",
+            "description": "Sign in with Google, list a Drive folder (including subfolders) and read file contents in natural language. Read-only."
+        }
+    ]
+}

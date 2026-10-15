@@ -1,5 +1,15 @@
 {
   "name": "google-drive-reader",
-  "version": "0.1.0",
-  "description": "Read-only Google Drive listing and file reading for Claude Code via MCP stdio."
+  "version": "0.2.0",
+  "description": "Read-only Google Drive for Claude Code: sign in with Google, list a folder (including subfolders) and read file contents in natural language.",
+  "author": {
+    "name": "Winston Chen"
+  },
+  "repository": "https://github.com/winson2623/google_drive_mcp",
+  "keywords": [
+    "google-drive",
+    "mcp",
+    "oauth",
+    "read-only"
+  ]
 }

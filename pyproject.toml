@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "google_drive_mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "Read-only Google Drive MCP server for Claude Code"
 requires-python = ">=3.10"
 dependencies = [
-    "google-api-python-client",
-    "google-auth-httplib2",
-    "google-auth-oauthlib",
-    "mcp",
-    "pypdf",
+    "google-api-python-client==2.201.0",
+    "google-auth-httplib2==0.4.4",
+    "google-auth-oauthlib==1.5.0",
+    "mcp==2.3.0",
+    "pypdf==6.20.0",
 ]
 
 [project.scripts]

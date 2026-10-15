@@ -1,0 +1,8 @@
+# Runtime dependencies for the google-drive MCP server, installed by launch.py
+# into a private virtual environment. Direct dependencies are pinned exactly
+# (pip resolves their transitive dependencies). Keep in sync with pyproject.toml.
+google-api-python-client==2.201.0
+google-auth-httplib2==0.4.4
+google-auth-oauthlib==1.5.0
+mcp==2.3.0
+pypdf==6.20.0
