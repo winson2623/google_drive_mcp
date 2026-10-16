@@ -14,7 +14,7 @@ A small Claude Code integration to Google Drive. It's **read-only** and runs **e
 
 
 ## 1. Install the plugin
-
+Run these in a blank new terminal (not inside Claude Code). If Claude Code is already open, close it.
 
 **Windows (PowerShell):**
 
@@ -49,7 +49,6 @@ No `pip install`, no venv to activate and no `.env` to create: the plugin sets i
 ```
 claude
 ```
-
 
 > The first start installs the plugin's dependencies in the background (about 1-3 minutes, one time). Type `/mcp` and check that `google-drive` says **connected**. If Claude says it is still setting up, wait a moment and ask again.
 
